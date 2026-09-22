@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to your RX CLOTHS account.">
+  <title>Login | RX CLOTHS</title>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+<body class="login-page">
+  <header class="login-header">
+    <a href="INDEX.HTML" class="logo" aria-label="RX CLOTHS home">
+      <span class="logo-mark">RX</span>
+      <span class="logo-text">CLOTHS</span>
+    </a>
+    <a href="INDEX.HTML" class="login-back">Back to home</a>
+  </header>
+
+  <main class="login-main">
+    <section class="login-panel" aria-labelledby="login-title">
+      <p class="eyebrow dark">RX CLOTHS / ACCOUNT</p>
+      <h1 id="login-title">Welcome<br><em>Back.</em></h1>
+      <p class="login-intro">Sign in to view your orders, wishlist and saved details.</p>
+      <form class="login-form" action="supabase-login" method="post">
+        <label for="login-email">Email address</label>
+        <input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="login-password">Password</label>
+        <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+        <div class="login-options">
+          <label class="remember-option"><input type="checkbox" name="remember"> <span>Remember me</span></label>
+          <a href="Support.html">Forgot password?</a>
+        </div>
+        <button class="btn btn-blue" type="submit">Sign In</button>
+      </form>
+      <p class="login-signup">New to RX CLOTHS? <a href="signup.html">Create an account</a></p>
+    </section>
+    <div class="login-image" aria-hidden="true"></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

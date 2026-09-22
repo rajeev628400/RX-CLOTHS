@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your RX CLOTHS account.">
+  <title>Create Account | RX CLOTHS</title>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+<body class="login-page">
+  <header class="login-header">
+    <a href="INDEX.HTML" class="logo" aria-label="RX CLOTHS home">
+      <span class="logo-mark">RX</span>
+      <span class="logo-text">CLOTHS</span>
+    </a>
+    <a href="INDEX.HTML" class="login-back">Back to home</a>
+  </header>
+
+  <main class="login-main">
+    <section class="login-panel" aria-labelledby="signup-title">
+      <p class="eyebrow dark">RX CLOTHS / ACCOUNT</p>
+      <h1 id="signup-title">Create<br><em>Account.</em></h1>
+      <p class="login-intro">Join RX CLOTHS to save your wishlist and track every order.</p>
+      <form class="login-form" action="supabase-signup" method="post">
+        <label for="signup-name">Full name</label>
+        <input id="signup-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+        <label for="signup-email">Email address</label>
+        <input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="signup-password">Password</label>
+        <input id="signup-password" name="password" type="password" autocomplete="new-password" placeholder="Create a password" minlength="8" required>
+        <label for="signup-confirm-password">Confirm password</label>
+        <input id="signup-confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Repeat your password" minlength="8" required>
+        <button class="btn btn-blue" type="submit">Create Account</button>
+      </form>
+      <p class="login-signup">Already have an account? <a href="login.html">Sign in</a></p>
+    </section>
+    <div class="login-image" aria-hidden="true"></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
