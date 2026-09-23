@@ -1,2 +1,2 @@
-window.RXCLOTHS_SUPABASE_URL = 'PASTE_YOUR_SUPABASE_PROJECT_URL_HERE';
-window.RXCLOTHS_SUPABASE_ANON_KEY = 'PASTE_YOUR_SUPABASE_ANON_KEY_HERE';
+window.RXCLOTHS_SUPABASE_URL = 'https://twvnerhtnifaknnxemyp.supabase.co';
+window.RXCLOTHS_SUPABASE_ANON_KEY = 'sb_publishable_cGyAgWZGxxTEKniMMO6t6w_mfrvxb-O';
