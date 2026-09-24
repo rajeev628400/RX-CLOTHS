@@ -748,19 +748,19 @@ select{
 }
 
 .cat1{
-  background-image:url("image/men cloth/Puffer Jacket.png");
+  background-image:url("image/men%20cloth/Puffer Jacket.png");
 }
 
 .cat2{
-  background-image:url("image/men cloth/Utility Overshirt.png");
+  background-image:url("image/men%20cloth/Utility Overshirt.png");
 }
 
 .cat3{
-  background-image:url("image/women cloths/Black Satin Cowl-Neck Slip Dress.jpeg");
+  background-image:url("image/women%20cloths/Black Satin Cowl-Neck Slip Dress.jpeg");
 }
 
 .cat4{
-  background-image:url("image/kids cloths/Kids Hooded Tracksuit Set.jpeg");
+  background-image:url("image/kids%20cloths/Kids Hooded Tracksuit Set.jpeg");
 }
 
 .feature{
