@@ -58,8 +58,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="Women.html">Women</a>
     <a href="Kids.html">Kids</a>
     <a href="faq.html">FAQ</a>
+    <a href="Support.html">Support</a>
     <a href="shop.html">Shop</a>
-    <a href="inquiry.html">Inquiry Services</a>
+    <a href="Support.html">Inquiry Services</a>
     <a href="#reviews">Reviews</a>
     <a href="login.html">Account</a>
   </nav>
@@ -263,7 +264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2>Let's Create<br>Something Exceptional.</h2>
       </div>
 
-      <form action="mailto:hello@rxcloths.com" method="post" enctype="text/plain">
+      <form data-mailto-subject="Private project inquiry">
         <label>Name<input required name="Name" placeholder="Your name"></label>
         <label>Email<input required type="email" name="Email" placeholder="you@example.com"></label>
         <label>Service<select name="Service">
@@ -282,7 +283,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="eyebrow">RX / INSIDER</p>
       <h2>Stay in the RX Circle</h2>
       <p>Early access to new drops, private releases and exclusive offers.</p>
-      <form action="mailto:hello@rxcloths.com" method="post" enctype="text/plain">
+      <form data-mailto-subject="RX CLOTHS newsletter subscription">
         <input required type="email" name="Email" placeholder="Enter your email">
         <button class="btn btn-light" type="submit">Subscribe</button>
       </form>
@@ -292,7 +293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="eyebrow dark">ACCOUNT</p>
       <h2>Your RX CLOTHS account</h2>
       <p>Welcome, <strong data-account-name>there</strong>. Your orders, wishlist and saved details will appear here.</p>
-      <a href="inquiry.html" class="btn btn-blue">Contact RX CLOTHS</a>
+      <a href="Support.html" class="btn btn-blue">Contact RX CLOTHS</a>
     </section>
 
   </main>
@@ -316,8 +317,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>123 Fashion Avenue<br>Style District, NY 10001</p>
       </div>
       <div class="footer-links">
-        <div><b>Explore</b><a href="shop.html">Shop</a><a href="faq.html">FAQ</a><a href="inquiry.html">Services</a></div>
-        <div><b>Help</b><a href="inquiry.html">Shipping & Returns</a><a href="inquiry.html">Privacy Policy</a><a href="inquiry.html">Terms</a></div>
+        <div><b>Explore</b><a href="shop.html">Shop</a><a href="faq.html">FAQ</a><a href="Support.html">Services</a></div>
+        <div><b>Help</b><a href="Support.html">Shipping & Returns</a><a href="Support.html">Privacy Policy</a><a href="Support.html">Terms</a></div>
         <div><b>Social</b><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">TikTok</a></div>
       </div>
     </div>
@@ -329,8 +330,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>
-  <script src="auth.js"></script>
+  <script src="./image/auth.js"></script>
   <script src="catalog.js"></script>
+  <script src="checkout.js"></script>
+  <script src="mailto-forms.js"></script>
+  <script src="./mobile-menu.js"></script>
 </body>
 </html>
 '''

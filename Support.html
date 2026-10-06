@@ -31,6 +31,7 @@
       <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
     </svg>
   </a>
+  <a href="#mobile-menu" class="menu-icon" aria-label="Open navigation">☰</a>
   </div>
   </header>
   <nav class="mobile-nav" id="mobile-menu">
@@ -50,7 +51,7 @@
       <h1>Let's Create<br>Something Exceptional.</h1>
     </div>
 
-    <form action="mailto:hello@rxcloths.com" method="post" enctype="text/plain">
+    <form data-mailto-subject="Private project inquiry">
       <label>Name<input required name="Name" placeholder="Your name"></label>
       <label>Email<input required type="email" name="Email" placeholder="you@example.com"></label>
       <label>Service<select name="Service">
@@ -78,7 +79,9 @@
   </div>
   </aside>
   <a href="#" class="backdrop" aria-label="Close bag"></a>
+  <script src="mailto-forms.js"></script>
   
   
+  <script src="./mobile-menu.js"></script>
 </body>
 </html>

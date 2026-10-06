@@ -101,6 +101,12 @@
       return total + getNumericPrice(product.price) * product.quantity;
     }, 0))}`;
     emptyCart.appendChild(subtotal);
+
+    const checkoutButton = document.createElement('button');
+    checkoutButton.type = 'button';
+    checkoutButton.className = 'btn btn-blue checkout-start';
+    checkoutButton.textContent = 'Proceed to Checkout';
+    emptyCart.appendChild(checkoutButton);
   }
 
   function addToCart(product) {
@@ -301,6 +307,11 @@
     document.body.classList.add('catalog-ready');
     setupCollectionCart();
     setupProductDetails();
+    updateCartUI();
+  });
+
+  window.addEventListener('rx-cart-clear', function () {
+    saveCart([]);
     updateCartUI();
   });
 }());
